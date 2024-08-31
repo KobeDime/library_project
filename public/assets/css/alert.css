@@ -1,0 +1,68 @@
+/* styles.css */
+.table_deg {
+    border: 1px solid white;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+  }
+  th {
+    background-color: #9fd3c7;
+    color: #455d7a;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+  }
+  td {
+    color: #93e4c1;
+    background-color: #407088;
+    border: 1px solid white;
+  }
+  .book_img {
+    height: 120px;
+    width: 80px;
+    margin: auto;
+  }
+  .alert {
+    position: absolute;
+    top: 10%; 
+    right: 20px;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(-20px);
+    width: auto; 
+    max-width: 300px; 
+    z-index: 1000;
+  }
+  .alert.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .alert .close {
+    position: absolute; 
+    top: -3px; 
+    right: 5px; 
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    color: #155724;
+    cursor: pointer;
+    line-height: 1;
+  }
+  .alert.success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  .alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  .alert.warning {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  
